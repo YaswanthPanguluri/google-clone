@@ -8,14 +8,14 @@ const[input,setInput] = useState("");
 
     const search = e =>{
         e.preventDefault();
-        console.log("You hit Search");
+        console.log("You hit Search"); //Remove
     }
   return (
     <div className="search">
       <div className="search__input">
         <SearchIcon className="search__inputIcon" />
         <input
-          value={input}
+          value={input} 
           onChange={(e) => {
             setInput(e.target.value);
           }}
